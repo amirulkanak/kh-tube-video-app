@@ -1,4 +1,4 @@
-# <img src="./assets/icons/logo.png"/> PH Tube
+# <img src="./assets/icons/Logo.png"/> PH Tube
 
 A simple Video Tube website using API.
 
