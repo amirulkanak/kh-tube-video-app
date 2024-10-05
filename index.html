@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basics -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/amirulkanak.ico"
+      type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/4560343558.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Page Tittle -->
+    <title>PH Tube</title>
+
+    <!-- =======================================================
+    * Name: PH tube video App
+    * Updated: October 03 2024
+    * Developer: Amirul Alam Kanak
+    * Github: github.com/amirulkanak
+    * Credits: Programming Hero module-35 web.programming-hero.com
+    ======================================================== -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="wrapper border-b pt-[3.12rem] pb-8">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="./assets/icons/Logo.png" alt="Logo" class="h-8" />
+          </div>
+
+          <!-- Search Button -->
+
+          <label class="da-input da-input-bordered flex items-center gap-2">
+            <input
+              id="search-input"
+              type="text"
+              class="grow"
+              placeholder="Search" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="h-4 w-4 opacity-70">
+              <path
+                fill-rule="evenodd"
+                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </label>
+
+          <!-- Sort Button -->
+          <button
+            id="sort-views-btn"
+            class="category-btn da-btn bg-base-300 px-4 py-2 rounded">
+            Sort by views
+          </button>
+        </div>
+      </nav>
+      <!-- Categories buttons -->
+      <div
+        id="categories-btn-container"
+        class="wrapper flex justify-center items-center gap-[1.47rem] mt-[2rem] mb-[2.5rem]">
+        <button
+          id="all-videos-btn"
+          class="da-btn bg-red-500 text-white px-4 py-2 rounded category-btn">
+          All
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- video cards -->
+      <section class="wrapper flex flex-col items-center">
+        <!-- Cards -->
+        <div
+          id="video-cards-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+
+        <!-- video details modal -->
+        <dialog id="video-details-modal" class="da-modal">
+          <!-- <div class="da-modal-box">
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click outside to close</p>
+          </div>
+          <form method="dialog" class="da-modal-backdrop">
+            <button>close</button>
+          </form> -->
+        </dialog>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

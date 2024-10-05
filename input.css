@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kanak {
+  border: 1px solid red;
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-[62.5rem] mx-auto px-6;
+  }
+}
+
+@layer utilities {
+  body {
+    @apply font-manrope bg-white;
+  }
+}
