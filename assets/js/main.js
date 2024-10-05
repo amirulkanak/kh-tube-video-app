@@ -149,7 +149,7 @@ const displayVideosCard = (videos) => {
     videosContainer.classList = 'flex justify-center items-center min-h-[50vh]';
     videosContainer.innerHTML = `
     <div class="flex flex-col items-center gap-5">
-      <img src="./assets/icons/icon.png" class="w-[8.75rem]"/>
+      <img src="./assets/icons/video-icon.png" alt="no video icon" class="w-[8.75rem]"/>
       <p class="text-center text-2xl text-clr-gray">Opps!! No Content Found</p>
     </div>`;
     return;
